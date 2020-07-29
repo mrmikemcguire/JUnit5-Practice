@@ -1,11 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
+//
+//import org.junit.jupiter.api.AfterAll;
+//import org.junit.jupiter.api.AfterEach;
+//import org.junit.jupiter.api.Assertions;
+//import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.BeforeEach;
+//import org.junit.jupiter.api.Test;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Assert;
 
 class NameGreetingTester
 	{
@@ -37,7 +42,7 @@ class NameGreetingTester
 	@Test
 	void test()
 		{
-	    Assertions.assertEquals( 5, NameGreeting.addNumbers(2, 3),"Nice try, but...");
+	    Assert.assertEquals( "Nice try, but...", 5, NameGreeting.addNumbers(2, 3));
 		}
 
 // assertEquals("Hello World!\n", outContent.toString());

@@ -6,7 +6,8 @@ public class NameGreeting
 		{
 		//greetUser();
 		//addNumbers(2, 3);
-		System.out.println(addNumbers(2, 3));
+		//System.out.println(addNumbers(2, 3));
+		multiplyNumbers();
 		}
 	
 	public static void greetUser()
@@ -21,5 +22,16 @@ public class NameGreeting
 		{
 		System.out.println(x + " + " + y + " = " + (x + y));
 		return (x + y + 1);
+		}
+	
+	public static int multiplyNumbers()
+		{
+		System.out.println("What's your first integer?");
+		Scanner userNumber = new Scanner(System.in);
+		int firstNum = userNumber.nextInt();
+		System.out.println("What's your second integer?");
+		int secondNum = userNumber.nextInt();
+		System.out.println(firstNum + " x " + secondNum + " = " + (firstNum *secondNum));
+		return firstNum * secondNum;
 		}
 	}
