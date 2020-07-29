@@ -32,6 +32,6 @@ public class NameGreeting
 		System.out.println("What's your second integer?");
 		int secondNum = userNumber.nextInt();
 		System.out.println(firstNum + " x " + secondNum + " = " + (firstNum *secondNum));
-		return firstNum * secondNum;
+		return firstNum + secondNum;
 		}
 	}
